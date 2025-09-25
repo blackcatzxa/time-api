@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const r = await fetch("https://script.google.com/macros/s/AKfycbxUwAQ5a3z0ey1sglAum5C-FedWoVSItIex8BdEFNaFYLbPnYngSvaghMiW8h0ZrfY9/exec", {
+    const r = await fetch("https://script.google.com/macros/s/AKfycbzZDlFL2HlVyz6fIpD8jB6z9dq1kc1Nc8ZB2a-kKcOzWH99umc7rmYMyPJgmk32HiKO/exec", {
       headers: { "Cache-Control": "no-cache" }
     });
     const data = await r.json(); // 期待得到 { time: "YYYY-MM-DDTHH:mm:ss+08:00" }
